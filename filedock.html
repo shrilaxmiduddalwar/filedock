@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FileDock — Privacy Policy</title>
+  <meta name="description" content="Official Privacy Policy for the FileDock app and website. Learn what we collect, how we use data, your rights, and how to contact us." />
+  <meta name="robots" content="index,follow" />
+  <style>
+    :root{
+      --bg-1:#0f172a;--bg-2:#0b1022;
+      --ink:#e5e7eb;--muted:#94a3b8;
+      --a1:#4f46e5;--a2:#22d3ee;--a3:#a78bfa;
+      --card:rgba(255,255,255,.05);
+      --border:rgba(255,255,255,.12);
+      --radius:16px;--shadow:0 10px 30px rgba(0,0,0,.25);
+      --maxw:1000px;
+    }
+    /* background */
+    body{
+      margin:0;color:var(--ink);background:
+        radial-gradient(1100px 700px at 10% -10%, rgba(79,70,229,.25), transparent 60%),
+        radial-gradient(800px 500px at 90% 10%, rgba(167,139,250,.18), transparent 60%),
+        linear-gradient(120deg,var(--bg-1),var(--bg-2));
+      background-size:300% 300%;
+      animation:bgshift 22s ease-in-out infinite;
+      font:16px/1.7 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+    }
+    @keyframes bgshift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+    @media (prefers-reduced-motion:reduce){body{animation:none}.glow,.fade{animation:none !important}}
+
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:24px}
+    .card{
+      background:var(--card);border:1px solid var(--border);
+      border-radius:var(--radius);box-shadow:var(--shadow);
+      padding:clamp(18px,3vw,28px)
+    }
+    .rule{height:1px;margin:22px 0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent)}
+    h1,h2{margin:0 0 8px}
+    h2{font-size:clamp(20px,2.6vw,26px);color:#dbeafe}
+    p,li{color:#e5e7eb}
+    .muted{color:var(--muted)}
+
+    /* Fancy top heading “FileDock” */
+    .brand{
+      display:flex;justify-content:center;align-items:center;
+      padding:42px 0 18px
+    }
+    .brand__text{
+      font-weight:800;letter-spacing:.6px;line-height:1;
+      font-size:clamp(38px,8vw,72px);
+      background:conic-gradient(from 210deg,var(--a1),var(--a2),var(--a3),var(--a1));
+      -webkit-background-clip:text;background-clip:text;color:transparent;
+      filter:drop-shadow(0 6px 22px rgba(79,70,229,.35));
+      animation:huespin 14s linear infinite;
+    }
+    @keyframes huespin{to{filter:hue-rotate(360deg) drop-shadow(0 6px 22px rgba(79,70,229,.35))}}
+    .tagline{
+      text-align:center;margin-top:6px;color:var(--muted);
+      font-size:clamp(12px,1.8vw,14px)
+    }
+
+    /* layout */
+    .container{max-width:var(--maxw);margin:0 auto}
+    .section{margin:18px 0}
+    ul{padding-left:20px}
+    a{color:#22d3ee;text-decoration:underline;text-underline-offset:3px}
+
+    footer{padding:30px 24px 60px;text-align:center;color:var(--muted)}
+    @media print{
+      body{background:#fff;color:#111;animation:none}
+      .brand__text{color:#111;-webkit-text-fill-color:#111;background:none}
+      .card{background:#fff;border:1px solid #e5e7eb;box-shadow:none}
+      a{color:#111}
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="brand">
+      <div class="brand__text" aria-label="FileDock">FileDock</div>
+    </div>
+    <p class="tagline">Smart file manager with offline access, quick share links, cloud sync, and a built-in PDF scanner.</p>
+  </header>
+
+  <main class="container wrap">
+    <article class="card">
+      <h1>Privacy Policy</h1>
+      <p><strong>Effective Date:</strong> 17 September 2025</p>
+      <p><strong>Owner:</strong> FileDock &nbsp;•&nbsp; <strong>Developer:</strong> FileDock</p>
+
+      <div class="rule"></div>
+
+      <section class="section">
+        <h2>1) About FileDock</h2>
+        <p>FileDock is a file-management app that helps you organize local files, scan documents to PDF, sync selected folders to the cloud, and share items via secure links you control. This Privacy Policy explains how FileDock handles information in the mobile app and on our website.</p>
+      </section>
+
+      <section class="section">
+        <h2>2) Information We Collect</h2>
+        <ul>
+          <li><strong>Device & App Info</strong> (for reliability): model, OS version, app version, language, crash/performance logs.</li>
+          <li><strong>Usage Data</strong> (to improve features): actions such as create, rename, move, share, scan to PDF, or enable offline folders.</li>
+          <li><strong>Account Data</strong> (if you sign in): name, email, and authentication identifiers for sync/backup.</li>
+          <li><strong>Your Files & Content</strong>: files/folders and metadata you choose to manage with FileDock; stored locally or in your chosen cloud; we don’t access content unless you ask the app to process/sync/share it.</li>
+          <li><strong>Payments</strong> (if applicable): purchase history/transaction IDs from app store billing; FileDock does not store full card details.</li>
+          <li><strong>Support</strong>: messages and attachments you send to resolve issues.</li>
+          <li><strong>Cookies</strong> (website): strictly necessary cookies; optional analytics only with consent where required.</li>
+        </ul>
+        <p class="muted">Note: Some diagnostics are aggregated or de-identified to help us understand performance and stability trends.</p>
+      </section>
+
+      <section class="section">
+        <h2>3) How We Use Data</h2>
+        <ul>
+          <li>Run core features (local file operations, offline mode, scan to PDF, secure share links, selective sync/backup).</li>
+          <li>Personalize experience and remember preferences (e.g., default view, recent folders).</li>
+          <li>Improve quality and safety through analytics, crash reports, and abuse prevention.</li>
+          <li>Communicate updates, tips, security notices, and service changes.</li>
+          <li>Comply with legal obligations and enforce our terms.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>4) App Permissions</h2>
+        <ul>
+          <li><strong>Storage / Files & media</strong>: read/write files and folders you select for management, backup, or export.</li>
+          <li><strong>Photos/Media</strong> (optional): import/preview media you pick inside the app.</li>
+          <li><strong>Camera</strong> (optional): capture documents to PDF and save into your folders.</li>
+          <li><strong>Notifications</strong> (optional): alert you when long operations (backup, share link creation) finish or fail.</li>
+          <li><strong>Network</strong>: enable sync, backups, and opening share links.</li>
+        </ul>
+        <p class="muted">Permissions are used only for the features you choose. You can revoke them any time from system settings.</p>
+      </section>
+
+      <section class="section">
+        <h2>5) Legal Bases (GDPR)</h2>
+        <ul>
+          <li><strong>Contract</strong>: to provide requested features like file operations, scan, sync, or share links.</li>
+          <li><strong>Legitimate Interests</strong>: to secure, debug, and improve FileDock in a way that respects your rights.</li>
+          <li><strong>Consent</strong>: for optional analytics/communications where required.</li>
+          <li><strong>Legal Obligation</strong>: to comply with applicable laws and requests.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>6) Sharing & Transfers</h2>
+        <ul>
+          <li><strong>Service Providers</strong>: infrastructure, analytics/crash reporting, and support tools under confidentiality and data-processing terms.</li>
+          <li><strong>Compliance</strong>: to regulators or law enforcement when legally required.</li>
+          <li><strong>Business Changes</strong>: if we undergo a merger/acquisition, data may transfer with continued protections.</li>
+        </ul>
+        <p>International transfers—where applicable—use appropriate safeguards (e.g., Standard Contractual Clauses or equivalent lawful mechanisms).</p>
+      </section>
+
+      <section class="section">
+        <h2>7) Retention</h2>
+        <p>We retain personal data only as long as needed for the purposes above or as required by law. You can delete content, revoke share links, and request account deletion from within the app or by contacting support.</p>
+      </section>
+
+      <section class="section">
+        <h2>8) Security</h2>
+        <ul>
+          <li>TLS encryption for data in transit; platform encryption for supported storage providers.</li>
+          <li>Least-privilege access controls and audit logging.</li>
+          <li>Ongoing vulnerability management and secure SDLC practices.</li>
+        </ul>
+        <p class="muted">No method is 100% secure; we continuously improve our safeguards.</p>
+      </section>
+
+      <section class="section">
+        <h2>9) Your Rights & Choices</h2>
+        <ul>
+          <li><strong>GDPR (EU/EEA/UK)</strong>: access, rectification, erasure, portability, restriction, objection, and complaint to a supervisory authority.</li>
+          <li><strong>CCPA/CPRA (California)</strong>: right to know, delete, correct, and opt-out of sale/share of personal information; no discrimination for exercising rights.</li>
+          <li><strong>DPDP (India)</strong>: access, correction, erasure, consent management, and grievance redressal.</li>
+        </ul>
+        <p>To exercise rights or appeal a decision, contact us using the details below. We may verify your identity as required by law.</p>
+      </section>
+
+      <section class="section">
+        <h2>10) Children’s Privacy</h2>
+        <p>FileDock is not directed to children under 13 (or the age required by your jurisdiction). We do not knowingly collect data from children. If you believe a child provided data, please contact us to request deletion.</p>
+      </section>
+
+      <section class="section">
+        <h2>11) Do Not Track & Global Privacy Control</h2>
+        <p>Where legally required, our website honors applicable browser signals (e.g., Global Privacy Control). Security-essential cookies/functions may still operate.</p>
+      </section>
+
+      <section class="section">
+        <h2>12) Changes to This Policy</h2>
+        <p>We may update this Privacy Policy for legal, technical, or operational reasons. We’ll post the new version with an updated “Effective Date.” Continued use after changes means you accept the updated policy.</p>
+      </section>
+
+      <section class="section">
+        <h2>13) Contact</h2>
+        <ul>
+          <li><strong>Owner/Developer:</strong> FileDock</li>
+          <li><strong>Email:</strong> <a href="mailto:support@filedock.in">support@filedock.in</a></li>
+          <li><strong>Address:</strong> FileDock, Bhubaneswar, Odisha, India</li>
+        </ul>
+        <p class="muted">For EU/UK users, you may also complain to your local data protection authority.</p>
+      </section>
+
+      <div class="rule"></div>
+      <p class="muted">Version 1.0 • Effective 17 Sep 2025</p>
+    </article>
+  </main>
+
+  <footer>
+    © <span id="year">2025</span> FileDock. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
